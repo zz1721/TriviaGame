@@ -1,0 +1,16 @@
+
+#header1 {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 1000px;
+    text-align: center;
+    background: lightblue;
+}
+
+#header {
+    font-size: 50px;
+}
+
+#smallheader {
+    font-size: 20px;
+}
