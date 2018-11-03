@@ -50,11 +50,11 @@ var quiz = [{
 
 $(document).ready(function () {
 
-    var questionNumber=0;
+   
     
 
     function AnswerList() {
-        
+        var questionNumber=0;
         for (i = 0; i <= 3; i++) {
             // var questionNumber=0;
             // $(".answers").append(quiz[0].answers[i]);
@@ -79,10 +79,14 @@ $(document).ready(function () {
         
     }
     function QuestionDisplay() {
+        var questionNumber=0;
         $(".questionArea").text(quiz[questionNumber].question)
         console.log(quiz)
         // get the question array
     }
+
+    // I think it is a problem with how I set up my array. 0 is the last and only index in the array which confuses me. I tried putting in
+    // [1] and it showed up undefined and it seemed that it only reconized [0] and [0] was only the ending index of th array.
     
     var interval= setInterval(Timer, 1000);
 
